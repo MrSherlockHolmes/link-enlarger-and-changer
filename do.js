@@ -24,7 +24,6 @@ var websites = ["billionbirthday", "alightyear", "jackthefabricripper"]
 checkCookie();
 function checkCookie() {
     console.log(document.cookie);
-    /*
     if (getCookie("siteNumber") === "" || getCookie("siteNumber") === "2") {
       setCookie("siteNumber", "", 0);
       setCookie("siteNumber", "0", 365);
@@ -33,6 +32,7 @@ function checkCookie() {
       setCookie("siteNumber", "", 0);
       setCookie("siteNumber", rem, 365);
     }
+    /*
     window.location.href = "http://" + websites[getCookie("siteNumber")] + ".com";
     */
 }

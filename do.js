@@ -28,7 +28,7 @@ function checkCookie() {
       setCookie("siteNumber", "", 0);
       setCookie("siteNumber", "0", 365);
     } else {
-      var rem = getCookie("siteNumber") + 1;
+      var rem = +getCookie("siteNumber") + 1;
       setCookie("siteNumber", "", 0);
       setCookie("siteNumber", rem, 365);
     }

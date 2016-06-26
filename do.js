@@ -23,10 +23,13 @@ function getCookie(cname) {
 var websites = ["billionbirthday", "alightyear", "jackthefabricripper"]
 checkCookie();
 function checkCookie() {
+    console.log(getCookie("siteNumber"))
+    /*
     if (getCookie("siteNumber") === "" || getCookie("siteNumber") === "2") {
       setCookie("siteNumber", "0", 365);
     } else {
       setCookie("siteNumber", getCookie("siteNumber") + 1, 365);
     }
     window.location.href = "http://" + websites[getCookie("siteNumber")] + ".com";
+    */
 }

@@ -28,8 +28,9 @@ function checkCookie() {
       setCookie("siteNumber", "", 0);
       setCookie("siteNumber", "0", 365);
     } else {
+      var rem = getCookie("siteNumber");
       setCookie("siteNumber", "", 0);
-      setCookie("siteNumber", getCookie("siteNumber") + 1, 365);
+      setCookie("siteNumber", rem + 1, 365);
     }
     window.location.href = "http://" + websites[getCookie("siteNumber")] + ".com";
 }

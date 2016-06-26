@@ -32,5 +32,4 @@ function checkCookie() {
       setCookie("siteNumber", getCookie("siteNumber") + 1, 365);
     }
     window.location.href = "http://" + websites[getCookie("siteNumber")] + ".com";
-    */
 }

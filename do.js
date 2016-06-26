@@ -20,13 +20,13 @@ function getCookie(cname) {
     return "";
 }
 
-var websites = ["billionbirthday", "alightyear", "jackthefabricripper", "to", "uk"]
+var websites = ["billionbirthday", "alightyear", "jackthefabricripper"]
 checkCookie();
 function checkCookie() {
-    if (getCookie("siteNumber") === "" || getCookie("siteNumber") === "4") {
+    if (getCookie("siteNumber") === "" || getCookie("siteNumber") === "2") {
       setCookie("siteNumber", "0", 365);
     } else {
       setCookie("siteNumber", getCookie("siteNumber") + 1, 365);
     }
-    window.location.href = "http://" + websites[getCookie("siteNumber")];
+    window.location.href = "http://" + websites[getCookie("siteNumber")] + ".com";
 }
